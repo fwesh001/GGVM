@@ -1,0 +1,129 @@
+body {
+    background-color:black;
+    text-align: center;
+}
+
+.nav {
+    text-align: right;
+    margin-right: 0px;
+    cursor: pointer;
+    font-size:20px;
+}
+
+.realnav {
+    text-align: center;
+    padding: 20px;
+    display:none;
+    background-color:gold;
+    border-radius: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 150px;
+    margin-left: auto;
+    height: 170px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration:none;
+    color: red;
+}
+
+
+
+h1 {
+color: white;
+}
+
+#current-time {
+    text-align: left;
+    margin-left:0px;
+    margin-top:10px;
+    position: absolute;
+    cursor: pointer;
+    color:gold;
+    font-size:10px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: purple;
+    border-radius: 2px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+   
+  }
+
+  #current-time:hover {
+    text-align: left;
+    margin-left:0px;
+    position: absolute;
+    cursor: zoom-in;
+    color:white;
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: black;
+    border-radius: 2px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+   
+  }
+
+  .box-container{
+    background-image: url(bg.jpg);
+    width: 500px;
+    height: 350px;
+    border-radius: 50px;
+    margin: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    text-align: center;
+
+} 
+
+button {
+    margin-top:30px;
+    width:150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: gold;
+    color: purple;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius:0;
+
+
+}
+
+footer{
+    color: white;
+}
+
+b{
+    color:gold;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+.sp{
+    color:red;
+}
+
+.sp:hover{
+    color: white;
+    font-weight: bold;
+}

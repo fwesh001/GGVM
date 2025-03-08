@@ -1,0 +1,62 @@
+body{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box-container{
+    background: linear-gradient(to right, red, orange);
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+    text-align: center;
+    } 
+
+button{
+    width: 90px;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+}
+
+.Login :hover{
+    background: linear-gradient(to right, orange,red);
+    color:black;
+    border: 0;
+    font-weight:bolder;
+    font-size: 20px;
+
+}
+
+label{
+    color: white;
+    font-size: larger;
+}
+
+b{
+    font-size: large;
+    color: white;
+}
+
+.Remember{
+    font-size: small;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color: white;
+}
+
+img{
+    width:auto;
+    height:20px;
+}
