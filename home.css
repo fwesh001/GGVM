@@ -121,3 +121,19 @@ img{
 .sp:hover{
     color: white;
 }
+
+
+.Under-construction{
+    width: auto;
+    background: linear-gradient(to right, blue, black);
+    height: 500px;
+    border-radius: 20px;
+    margin-top:40px;
+}
+
+.Img1 {
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
