@@ -1,7 +1,12 @@
 body {
-    background-color:black;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
 }
+
 
 .nav {
     text-align: right;
@@ -33,7 +38,15 @@ a {
 
 h1 {
 color: white;
+margin: 0;
+padding: 0;
 }
+
+h2 {
+    font-size: 50px;
+}
+
+
 
 #current-time {
     text-align: left;
@@ -44,7 +57,7 @@ color: white;
     color:gold;
     font-size:10px;
     font-family:'Times New Roman', Times, serif;
-    background-color: purple;
+    background-color: black;
     border-radius: 2px;
     width: 100px;
     text-align: center;
@@ -60,7 +73,7 @@ color: white;
     color:white;
     font-size:20px;
     font-family:'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: purple;
     border-radius: 2px;
     width: 100px;
     text-align: center;
@@ -68,50 +81,8 @@ color: white;
    
   }
 
-  .box-container{
-    background-image: url(bg.jpg);
-    border-radius: 30px;
-    margin: 40px;
-    padding: 20px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-
-} 
-
-.box-content{
-    margin: 40px;
-    padding: 20px;
-}
-
-button {
-    margin-top:30px;
-    width:150px;
-    height: 40px;
-    border-radius: 30px;
-    background-color: gold;
-    color: purple;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-}
-
-button:hover {
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius:0;
-
-
-}
-
-footer{
-    color: white;
+  footer{
+    color: black;
 }
 
 b{
@@ -122,11 +93,44 @@ b{
     font-weight:bold;
 }
 
+button {
+    margin: 1px;
+    padding:5px;
+    background-color: gold;
+    border-color: gold;
+    color: purple;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    
+}
+
 .sp{
-    color:red;
+    color:purple;
 }
 
 .sp:hover{
-    color: white;
+    color: black;
     font-weight: bold;
+}
+
+.box-container{
+    background-color: white;
+    border-radius: 30px;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box-content {
+    margin: 20px;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
 }

@@ -8,14 +8,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-    
+
+header {
+    background-color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    padding: 2px;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+  
 
 h1 {
-    text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     color:white;
-    background-color: gold;
-    margin: 0;
+    text-align: center;
 }
 
 marquee {
@@ -28,7 +37,7 @@ marquee {
 button{
     border-radius: 5em  ;
     color: purple; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: 17.9px;
     font-style: italic;
@@ -49,17 +58,10 @@ img{
     width: 30%;
     height: 30%;
     border-radius: 25px;
-    margin-left:10px;
+    padding: 20px;
 
 }
 
-footer {
-    background-color: #4567b7;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-}
 
 .center{
     margin-left: auto;
@@ -69,3 +71,57 @@ footer {
 table{
     margin: 100px;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
