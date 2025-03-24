@@ -1,12 +1,7 @@
 body {
-    background-image: url(bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color:black;
     text-align: center;
 }
-
 
 .nav {
     text-align: right;
@@ -38,15 +33,7 @@ a {
 
 h1 {
 color: white;
-margin: 0;
-padding: 0;
 }
-
-h2 {
-    font-size: 50px;
-}
-
-
 
 #current-time {
     text-align: left;
@@ -57,7 +44,7 @@ h2 {
     color:gold;
     font-size:10px;
     font-family:'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: purple;
     border-radius: 2px;
     width: 100px;
     text-align: center;
@@ -73,7 +60,7 @@ h2 {
     color:white;
     font-size:20px;
     font-family:'Times New Roman', Times, serif;
-    background-color: purple;
+    background-color: black;
     border-radius: 2px;
     width: 100px;
     text-align: center;
@@ -81,56 +68,70 @@ h2 {
    
   }
 
-  footer{
-    color: black;
+  .box-container{
+    background-image: url(plantsbg.jpg);
+    border-radius: 30px;
+    margin: 40px;
+    padding: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+} 
+
+.box-content{
+    margin: 40px;
+    padding: 20px;
 }
 
-b{
-    color:gold;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:bold;
-}
 
 button {
     margin: 1px;
     padding:5px;
-    background-color: gold;
-    border-color: gold;
-    color: purple;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: purple;
+    border-color: white;
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     width: 150px;
     height: 150px;
     border-radius: 30px;
     
 }
 
+button:hover{
+    color: black;
+    background-color:white;
+}
+
 .sp{
-    color:purple;
+    color:red;
 }
 
 .sp:hover{
-    color: black;
-    font-weight: bold;
+    color: white;
 }
 
-.box-container{
-    background-image: url(bgbook.jpg);
+p{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+
+.box-containermusic{
+    background-image: url(music.jpg);
     border-radius: 30px;
     margin: 40px;
     padding: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-}
-
-.box-content {
-    margin: 20px;
-    padding: 10px;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
 }
