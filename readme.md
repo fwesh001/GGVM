@@ -18,25 +18,19 @@
 
 GGVM is built using a combination of web technologies:
 
-- 🧱 HTML5 for structure  
-- 🎨 CSS3 for styling  
+- 🧱 HTML for structure  
+- 🎨 CSS for styling  
 - 🧠 JavaScript for interactivity  
 - 🐘 PHP for the backend (user management, article creation)  
-- 🗃 MySQL (or any DB you prefer) for data storage
+- 🗃 MySQL for data storage
 
 ---
 
 
-## 🚀 Installation and Usage
+## 🚀 Installation and Usage:
 
-To set up GGVM locally, follow these steps:
-
-```bash
-# Clone the repository
-git clone https://github.com/fwesh001/GGVM.git
-
-# Navigate to the project folder
-cd GGVM
+```
+> Coming soon... 
 ```
 ---
 # 📊 Live Demo
