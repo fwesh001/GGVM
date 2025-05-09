@@ -29,9 +29,9 @@ GGVM is built using a combination of web technologies:
 
 ## 🚀 Installation and Usage:
 
-```
-> Coming soon... 
-```
+
+> Coming soon...
+
 ---
 # 📊 Live Demo
 Check out the live version of GGVM here:
