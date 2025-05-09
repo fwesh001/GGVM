@@ -50,8 +50,5 @@ If you have suggestions, bug fixes, or new features in mind, feel free to:
 ### Any help is appreciated — let’s make GGVM better together!
 ---
 
-#  📄 License
-This project is licensed under the MIT License.
----
 
 
