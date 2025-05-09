@@ -1,4 +1,4 @@
-# 📰 GGVM - Personal Blog Platform
+#  📰 GGVM - Personal Blog Platform
 
 *GGVM is a simple, interactive personal blog platform designed to allow users to explore articles, share their thoughts, and engage with content in a modern and clean user interface. Whether you're reading articles or contributing your own ideas, GGVM offers a platform where content and discussions can thrive.*
 
