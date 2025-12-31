@@ -8,6 +8,8 @@ function nav() {
     
 }
 
+
+
 const currentTimeElement = document.getElementById("current-time");
 
 function updateCurrentTime() {
@@ -18,3 +20,20 @@ function updateCurrentTime() {
 
 updateCurrentTime();
 setInterval(updateCurrentTime, 1000);
+
+
+// Script for modal upgrade 
+
+const modal = document.getElementById('upgradeModal');
+const stayBtn = document.getElementById('stayBtn');
+
+// 1. Check if they've seen it
+if (!localStorage.getItem('ggvm_visited')) {
+  modal.style.display = 'flex';
+}
+
+// 2. Close and save to memory when they click "Explore"
+stayBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  localStorage.setItem('ggvm_visited', 'true');
+});
