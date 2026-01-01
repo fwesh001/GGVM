@@ -1,21 +1,21 @@
 body {
-    background-color:black;
+    background-color: black;
     text-align: center;
-    
+
 }
 
 .nav {
     text-align: right;
     margin-right: 0px;
     cursor: pointer;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .realnav {
     text-align: center;
     padding: 20px;
-    display:none;
-    background-color:gold;
+    display: none;
+    background-color: gold;
     border-radius: 40px;
     font-family: 'Times New Roman', Times, serif;
     width: 150px;
@@ -32,15 +32,15 @@ body {
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
     color: red;
 }
 
 
 
 h1 {
-    color: rgb(0, 0, 0);  
- }
+    color: rgb(0, 0, 0);
+}
 
 .box-container {
     background-color: purple;
@@ -49,13 +49,15 @@ h1 {
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    
+
 }
+
 .box-container:hover {
     animation: fadeInUp 1s forwards;
 }
+
 .box-content {
-    color:white;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     animation: fadeInRight 1.5s ease-in-out;
@@ -66,12 +68,12 @@ h1 {
     font-size: 20px;
 }
 
-b{
-    color:gold;
+b {
+    color: gold;
     font-size: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    
+
 }
 
 .box {
@@ -88,47 +90,47 @@ p {
 
 #current-time {
     text-align: left;
-    margin-left:0px;
-    margin-top:10px;
+    margin-left: 0px;
+    margin-top: 10px;
     position: absolute;
     cursor: pointer;
-    color:gold;
-    font-size:10px;
-    font-family:'Times New Roman', Times, serif;
+    color: gold;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
     background-color: purple;
     border-radius: 2px;
     width: 100px;
     text-align: center;
     font-weight: bold;
-   
-  }
 
-  #current-time:hover {
+}
+
+#current-time:hover {
     text-align: left;
-    margin-left:0px;
+    margin-left: 0px;
     position: absolute;
     cursor: zoom-in;
-    color:white;
-    font-size:20px;
-    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     background-color: black;
     border-radius: 2px;
     width: 100px;
     text-align: center;
     font-weight: bold;
-   
-  }
 
-img{
-    width:auto;
-    height:40px;
 }
 
-.sp{
-    color:red;
+img {
+    width: auto;
+    height: 40px;
 }
 
-.sp:hover{
+.sp {
+    color: red;
+}
+
+.sp:hover {
     color: white;
 }
 
@@ -138,10 +140,10 @@ img{
     align-items: center;
     height: 50vh;
     margin: 20;
-    padding: 50px; 
+    padding: 50px;
 }
 
-.Under-construction{
+.Under-construction {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -154,7 +156,7 @@ img{
 button {
     background-color: greenyellow;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 2px;
     margin: 10px;
@@ -164,7 +166,7 @@ button {
     border-color: white;
 }
 
-button:hover{
+button:hover {
     color: white;
     background-color: black;
     border-color: black;
@@ -178,56 +180,153 @@ button:hover{
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-  }
-  
-  @keyframes fadeInUp {
+}
+
+@keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
-  }
-  
-  @keyframes fadeInLeft {
+}
+
+@keyframes fadeInLeft {
     0% {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
-  }
-  
-  @keyframes fadeInRight {
+}
+
+@keyframes fadeInRight {
     0% {
         opacity: 0;
         transform: translateX(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     0% {
         transform: translateY(-20px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
-  }
+}
 
-h2{
+h2 {
     animation: fadeInLeft 1.5s ease-in-out;
     color: gold;
+}
+
+/* --- MODAL STYLES --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 6, 20, 0.62), rgba(10, 6, 20, 0.78));
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 24px;
+    backdrop-filter: blur(6px) saturate(120%);
+}
+
+.modal-content {
+    background: linear-gradient(180deg, #ffffff 0%, #f3e9fc 100%);
+    padding: 22px 24px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 12px 40px rgba(106, 27, 154, 0.18);
+    color: #6a1b9a;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.modal-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+    color: #4a148c;
+}
+
+.modal-content p {
+    margin: 0 0 14px 0;
+    color: #5b2b86;
+    opacity: 0.95;
+    text-align: center;
+    /* Ensure P is centered */
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* allow wrapping on small screens */
+    margin-top: 8px;
+}
+
+#stayBtn {
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(106, 27, 154, 0.12);
+    transition: transform 0.15s, box-shadow 0.15s;
+    white-space: normal;
+    flex: 1;
+    font-size: 14px;
+}
+
+#stayBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(106, 27, 154, 0.2);
+}
+
+.upgrade-link {
+    display: inline-flex;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: #fff;
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(106, 27, 154, 0.08);
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    white-space: normal;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.upgrade-link:hover {
+    background: #6a1b9a;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(106, 27, 154, 0.18);
 }

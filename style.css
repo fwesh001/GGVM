@@ -19,11 +19,11 @@ header {
     animation: fadeIn 2s ease-in-out;
     text-align: center;
 }
-  
+
 
 h1 {
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     text-align: center;
 }
 
@@ -34,10 +34,11 @@ marquee {
     font-weight: bold;
     padding: 1px 1px;
 }
-button{
-    border-radius: 5em  ;
-    color: purple; 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+button {
+    border-radius: 5em;
+    color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: 17.9px;
     font-style: italic;
@@ -45,16 +46,16 @@ button{
     width: 110px;
     height: 50px;
     border-color: #fff;
-    
+
 }
 
-button:hover{
+button:hover {
     color: gold;
     background-color: black;
     font-size: 20px;
 }
 
-img{
+img {
     width: 30%;
     height: 30%;
     border-radius: 25px;
@@ -63,12 +64,12 @@ img{
 }
 
 
-.center{
+.center {
     margin-left: auto;
     margin-right: auto;
 }
 
-table{
+table {
     margin: 100px;
 }
 
@@ -76,71 +77,154 @@ table{
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-  }
-  
-  @keyframes fadeInUp {
+}
+
+@keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
-  }
-  
-  @keyframes fadeInLeft {
+}
+
+@keyframes fadeInLeft {
     0% {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
-  }
-  
-  @keyframes fadeInRight {
+}
+
+@keyframes fadeInRight {
     0% {
         opacity: 0;
         transform: translateX(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     0% {
         transform: translateY(-20px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
     }
-  }
+}
 
 
 .modal-overlay {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: none; /* Hidden by default */
-  justify-content: center; align-items: center;
-  z-index: 1000;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 6, 20, 0.62), rgba(10, 6, 20, 0.78));
+    display: none;
+    /* Hidden by default; toggle the .show class to display */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 24px;
+    backdrop-filter: blur(6px) saturate(120%);
+}
+
+.modal-overlay.show {
+    display: flex;
 }
 
 .modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  max-width: 400px;
+    background: linear-gradient(180deg, #ffffff 0%, #f3e9fc 100%);
+    padding: 22px 24px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 12px 40px rgba(106, 27, 154, 0.18);
+    color: #6a1b9a;
+    animation: fadeInUp 0.6s ease-out;
 }
 
-  
+.modal-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
+    color: #4a148c;
+}
+
+.modal-content p {
+    margin: 0 0 14px 0;
+    color: #5b2b86;
+    opacity: 0.95;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 8px;
+}
+
+#stayBtn {
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(106, 27, 154, 0.12);
+    transition: transform 0.15s, box-shadow 0.15s;
+    white-space: normal;
+    /* Allow text to wrap if needed */
+    flex: 1;
+    /* Allow to grow */
+    font-size: 14px;
+}
+
+#stayBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(106, 27, 154, 0.2);
+}
+
+.upgrade-link {
+    display: inline-flex;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: #fff;
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(106, 27, 154, 0.08);
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    white-space: normal;
+    /* Allow text to wrap if needed */
+    flex: 1;
+    /* Allow to grow */
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.upgrade-link:hover {
+    background: #6a1b9a;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(106, 27, 154, 0.18);
+}
